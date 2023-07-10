@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>assign1</title>
+  </head>
+
+  <body onload="main()">
+    <canvas id="webgl" width="400" height="400">
+    Please use a browser that supports "canvas"
+    </canvas>
+    <p>
+    <button type="button" id = "clearButton">Clear</button>
+    <p>
+    <button type="button" id = "pointButton">Point</button>
+    <button type="button" id = "triangleButton">Triangle</button>
+    <button type="button" id = "circleButton">Circle</button>
+    <p>
+    Red <input type="range" min="1" max="100" value="100" class="slider" id="redSlide">
+    Green <input type="range" min="1" max="100" value="100" class="slider" id="greenSlide">
+    Blue <input type="range" min="1" max="100" value="100" class="slider" id="blueSlide">
+    <p>
+    Shape Size <input type="range" min="5" max="40" value="5" class="slider" id="sizeSlide">
+    <p>
+    (circle)Segment Count <input type="range" min="10" max="30" value="10" class="slider" id="segSlide">
+    <p>
+    <button type="button" id = "picButton">Draw Picture</button>
+    <button type="button" id = "gameButton">Start Game</button>
+    <button type="button" id = "endButton">End Game</button>
+    <p>
+    <p>Drag the mouse across the canvas to control your paddle</p>
+    <p> Player Score </p>
+    <p id = 'pScore'>0</p>
+    <p> Bot Score </p>
+    <p id = 'bScore'>0</p>
+    <script src="lib/webgl-utils.js"></script>
+    <script src="lib/webgl-debug.js"></script>
+    <script src="lib/cuon-utils.js"></script>
+    <script src="Point.js"></script>
+    <script src="Circle.js"></script>
+    <script src="Triangle.js"></script>
+    <script src="pong.js"></script>
+    <script src="assgn1.js"></script>
+
+    <img src="ref_image.jpg" alt="Reference Pic"style="width:500px;height:600px;">
+  </body>
+</html>
